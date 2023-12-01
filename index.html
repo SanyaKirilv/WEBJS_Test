@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | Warehouse3D</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=2560 height=1440 tabindex="-1" style="width: 2560px; height: 1440px; background: #000000"></canvas>
+    <canvas id="unity-canvas" width=2560 height=1440 tabindex="-1" style="width: 2560px; height: 1440px; background: #5B5B5B"></canvas>
     <script src="Build/WarehouseWebJsBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WarehouseWebJsBuild.data.gz",
-        frameworkUrl: "Build/WarehouseWebJsBuild.framework.js.gz",
-        codeUrl: "Build/WarehouseWebJsBuild.wasm.gz",
+        dataUrl: "Build/WarehouseWebJsBuild.data",
+        frameworkUrl: "Build/WarehouseWebJsBuild.framework.js",
+        codeUrl: "Build/WarehouseWebJsBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kvantrotium",
         productName: "Warehouse3D",
